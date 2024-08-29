@@ -1,0 +1,51 @@
+
+.email-folder-list {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.email-folder-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.email-folder-list li {
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.folder-btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: lightgray;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.folder-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.folder-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.folder-btn i {
+    font-size: 18px;
+}

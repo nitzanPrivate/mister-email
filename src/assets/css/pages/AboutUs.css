@@ -1,0 +1,51 @@
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-us h1 {
+    font-size: 2em;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-us h2 {
+    font-size: 1.5em;
+    color: #5f6368;
+    margin-bottom: 15px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; /* Add space between the columns */
+    justify-items: center; 
+    align-items: flex-start; 
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member h3 {
+    font-size: 1.5em; /* Larger font size for the names */
+    margin-bottom: 10px; /* Space between name and image */
+}
+
+.team-photo {
+    width: 120px; /* Set a consistent width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    border: 2px solid #1a73e8;
+}

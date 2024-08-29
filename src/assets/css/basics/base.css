@@ -1,0 +1,168 @@
+/* Extend your existing App.css (or base.css) */
+
+/* Body */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f1f3f4; /* Gmail-like background */
+    font-family: 'Arial', sans-serif; /* Consistent with Gmail */
+    font-size: 14px; /* Match Gmail's base font size */
+}
+
+/* Main App Layout */
+.main-app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Set background for the main app area */
+}
+
+.main-app > header {
+    background-color: #ffffff;
+    padding: 12px 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); /* Slightly softer shadow */
+    border-bottom: 1px solid #e0e0e0; /* Light gray border */
+}
+
+.main-app > footer {
+    background-color: #111;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Header */
+.app-header {
+    background-color: lightgray !important; /* Solid background with high contrast */
+    color: white !important; /* White text color */
+    padding: 10px 20px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.header-content {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    color: white !important; /* Force white text color */
+}
+
+.site-title {
+    font-size: 24px !important;
+    color: brown !important; /* Ensure title is white */
+}
+
+.nav .nav-link {
+    color: #fff !important; /* Ensure navigation links are white */
+    font-weight: bold !important; /* Make the text bold for better visibility */
+    padding: 5px 10px; /* Add some padding around the links */
+    border-radius: 5px; /* Optional: Add slight rounding to the link backgrounds */
+}
+
+.nav .nav-link:hover {
+    background-color: #ffeb3b !important; /* Yellow background on hover for contrast */
+    color: #1a73e8 !important; /* Blue text on hover for visibility */
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+}
+
+.action-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #f1f3f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 0;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+}
+
+.sidebar li a:hover {
+    background-color: #e0e0e0;
+    padding-left: 10px;
+    transition: padding-left 0.3s;
+}
+
+/* Email List/Table */
+.email-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.email-table th, .email-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.email-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email-item:hover {
+    background-color: #f0f0f0;
+}
+
+.email-actions i {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.star-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: lightgray; /* Default color for an empty star */
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+.star-icon.filled {
+    color: gold; 
+}
+
+.star-icon.empty {
+    color: lightgray; 
+}
+
+.star-icon:hover {
+    background-color: #ffeb3b;
+}

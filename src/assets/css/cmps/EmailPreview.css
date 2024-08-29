@@ -1,0 +1,70 @@
+.email-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.email-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+
+.email-item:hover {
+    background-color: #f0f0f0; /* Hover effect */
+}
+
+.email-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.email-item .fa-star {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.email-item .fa-star.starred {
+    color: gold;
+}
+
+.email-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email-subject {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.email-body {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.email-date {
+    margin-left: auto;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.email-actions {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+.email-actions i {
+    cursor: pointer;
+}
+
+.email-actions i:hover {
+    color: #000; /* Darker color on hover */
+}

@@ -1,0 +1,54 @@
+.app-header {
+    display: flex;
+    background: purple;
+    color: white;
+    padding: 20px 10px; /* Corrected padding to use 'px' for both values */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+}
+
+.app-header section.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.site-title {
+    margin-right: 20px; /* Space between "MisterEmail" and the nav */
+    color: white /* Title color */
+}
+
+.nav {
+    display: flex;
+    gap: 20px; /* Space between each navigation link */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white; /* Link color */
+}
+
+.nav-link:hover {
+    color: lightgray; /* Slightly lighter on hover */
+}
+
+.app-header h1.logo {
+    flex-grow: 1;
+    font-weight: 600;
+}
+
+.app-header .back {
+    flex-grow: 1;
+}
+
+.app-header nav a:not(:last-child) {
+    margin-right: 10px;
+}
+
+.app-header section.container > section {
+    flex-grow: 1;
+}

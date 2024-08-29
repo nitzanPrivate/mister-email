@@ -1,0 +1,24 @@
+.home {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background */
+}
+
+.home-content {
+    background-color: rVgba(255, 255, 255, 0.9); /* White with slight transparency */
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+}
+
+.home h1 {
+    font-size: 2.5em;
+    color: #1a73e8;  /* Google blue */
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.2em;
+    color: #333;
+}

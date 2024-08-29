@@ -1,0 +1,63 @@
+/* Styles for each email row */
+.email-item {
+    cursor: pointer; /* Pointer cursor for the entire row */
+    transition: background-color 0.3s ease;
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Align items vertically centered */
+    padding: 10px 15px; /* Adjust padding for a more spaced layout */
+    border-bottom: 1px solid #ddd; /* Light gray border between rows */
+}
+
+.email-item:hover {
+    background-color: #f1f3f4; /* Lighter gray background on hover, closer to Gmail */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for hover effect */
+}
+
+/* Align content in table cells */
+.email-item td {
+    padding: 10px;
+    vertical-align: middle; /* Align content vertically in the middle */
+    text-align: left; /* Ensure text is aligned to the left */
+    border-bottom: none; /* Remove border from table cells as we use a border on the row */
+}
+
+/* Cursor for action buttons */
+.email-actions i {
+    cursor: pointer; /* Pointer cursor for action icons */
+    margin-left: 10px; /* Space between icons */
+    color: #5f6368; /* Default Gmail-like gray color for icons */
+}
+
+.email-actions i:hover {
+    color: #1a73e8; /* Google blue color on hover */
+}
+
+/* Style for the star icon */
+.star-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #c2c2c2; /* Light gray color for empty star */
+    border: none; /* Remove the border */
+    padding: 4px;
+    background-color: transparent; /* Transparent background */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.star-icon.filled {
+    color: gold; /* Gold color for filled star */
+}
+
+.star-icon.empty {
+    color: #c2c2c2; /* Light gray for empty star */
+}
+
+.star-icon:hover {
+    color: #ffeb3b; /* Brighter yellow on hover */
+}
+
+/* Ensure the checkbox and star icon are aligned */
+.email-item input[type="checkbox"] {
+    margin-right: 15px; /* Adjust space between checkbox and star icon */
+    cursor: pointer; /* Pointer cursor for the checkbox */
+}

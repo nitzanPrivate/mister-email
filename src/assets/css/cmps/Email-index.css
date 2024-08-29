@@ -1,0 +1,14 @@
+
+
+/* EmailIndex styling */
+.email-index {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.email-content {
+    margin-left: 220px; /* Adjust based on the width of your sidebar */
+    padding: 20px;
+    flex-grow: 1;
+}
