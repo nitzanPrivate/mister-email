@@ -13,14 +13,19 @@ export function EmailDetails() {
 
     function loadEmail() {
         emailService.getById(mailId).then(setEmail).catch(() => {
-            navigate('/emails'); // Navigate back if email not found
+            navigate('/emails');
         });
     }
 
     function onDeleteEmail() {
-        emailService.remove(mailId).then(() => {
-            navigate('/emails'); // Navigate back to the email list after deletion
-        });
+        const res = confirm("Do you really want to delete this email?");
+
+        if (res) {
+
+            emailService.remove(mailId).then(() => {
+                navigate('/emails');
+            });
+        }
     }
 
     if (!email) return <div>Loading...</div>;
@@ -28,9 +33,9 @@ export function EmailDetails() {
     return (
         <section className="email-details">
             <h2>{email.subject}</h2>
-            <p><strong>From:</strong> {email.from}</p>
-            <p><strong>To:</strong> {email.to}</p>
-            <p><strong>Sent At:</strong> {new Date(email.sentAt).toLocaleString()}</p>
+            <p className="from">From: {email.from}</p>
+            <p>To: {email.to}</p>
+            <p>Sent At: {new Date(email.sentAt).toLocaleString()}</p>
             <hr />
             <p>{email.body}</p>
             <div className="email-actions">
