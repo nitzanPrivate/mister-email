@@ -17,7 +17,7 @@ export function AboutUs() {
             </p>
             <h2>Our Team</h2>
            
-            <div className="team-container">
+            <section className="team-container">
                 <div className="team-member">
                     <h3>Nitzan Paz</h3>
                     <img src={nitzanPhoto} alt="Nitzan Paz" className="team-photo" />
@@ -26,7 +26,7 @@ export function AboutUs() {
                     <h3>Joy</h3>
                     <img src={dogPhoto} alt="Joy the Dog" className="team-photo" />
                 </div>
-            </div>
+            </section>
            
         </section>
     );

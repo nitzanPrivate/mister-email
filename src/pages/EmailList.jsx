@@ -8,6 +8,10 @@ export function EmailList({ emails, onSelectEmail, selectedEmails, onToggleStar,
         navigate(`/email/${emailId}`);
     }
 
+    function isRowClicked(){
+        return !e.target.closest('.email-checkbox') && !e.target.closest('.star-icon') && !e.target.closest('.email-actions');
+    }
+
     return (
         <table className="email-table">
             <thead>
@@ -29,10 +33,13 @@ export function EmailList({ emails, onSelectEmail, selectedEmails, onToggleStar,
             </thead>
             <tbody>
                 {emails.map(email => (
+                    //seperate to cmps in  loop preview
+                    // <Link to={}>
                     <tr 
                         key={email.id} 
                         onClick={(e) => {
-                            if (!e.target.closest('.email-checkbox') && !e.target.closest('.star-icon') && !e.target.closest('.email-actions')) {
+                            const isClicked = isRowClicked()
+                            if (isClicked) {
                                 handleRowClick(email.id);
                             }
                         }} 
@@ -40,14 +47,14 @@ export function EmailList({ emails, onSelectEmail, selectedEmails, onToggleStar,
                     >
                         <td>
                             <input
-                                type="checkbox"
-                                className="email-checkbox"
-                                checked={selectedEmails.includes(email.id)}
+                          type="checkbox"
+                          className="email-checkbox"
+                          checked={selectedEmails.includes(email.id)}
                                 onChange={(e) => {
                                     e.stopPropagation();  // Prevent row click when interacting with checkbox
                                     onSelectEmail(email.id);
                                 }}
-                            />
+                          />
                             <span
                                 className={`star-icon ${email.isStarred ? 'filled' : 'empty'}`}
                                 onClick={(e) => {
